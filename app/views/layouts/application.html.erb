@@ -11,6 +11,40 @@
   </head>
 
   <body>
+    <!--ヘッダー-->
+    <header>
+      <% if user_signed_in? %>
+        <!--ログイン済みの場合-->
+        <!--Home ／ Users ／ Books ／ Log out-->
+        <li>
+          Home
+        </li>
+        <li>
+          Users
+        </li>
+        <li>
+          <%= link_to "Books", destroy_user_session_path, method: :delete %>
+        </li>
+        <li>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete %>
+        </li>
+      <% else %>
+        <!--ログインしていない場合-->
+        <!--Home ／ About ／ Sign Up ／ Log in-->
+        <li>
+          Home
+        </li>
+        <li>
+          About
+        </li>
+        <li>
+          <%= link_to "Sign Up", new_user_registration_path %>
+        </li>
+        <li>
+          <%= link_to "Log in", new_user_session_path %>
+        </li>
+      <% end %>
+    </header>
     <%= yield %>
   </body>
 </html>
