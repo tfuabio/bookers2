@@ -55,7 +55,7 @@
             </td>
             <% if @book.user == current_user %>
               <td>
-                <%= link_to "Edit", book_path(@book.id), class: 'btn btn-sm btn-success edit_book_46443' %>
+                <%= link_to "Edit", edit_book_path(@book.id), class: 'btn btn-sm btn-success edit_book_46443' %>
               </td>
               <td>
                 <%= link_to "Destroy", book_path(@book.id), method: :destroy, "data-confirm" => "本当に消しますか？", class: 'btn btn-sm btn-danger destroy_book_46443' %>
