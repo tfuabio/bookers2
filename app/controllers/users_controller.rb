@@ -4,4 +4,9 @@ class UsersController < ApplicationController
 
   def edit
   end
+
+  def index
+    @users = User.all
+    @book = Book.new
+  end
 end
