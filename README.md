@@ -1,24 +1,9 @@
-# README
+# Bookers2（課題３）
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+DMM WEBCAMPの学習コンテンツ【アプリケーションを完成させよう2】の提出課題です。
 
-Things you may want to cover:
+## 使い方
 
-* Ruby version
+Ruby on Railsを使用したアプリケーションです。下記を実行後、ブラウザで開いてください。
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+$ rails s
